@@ -1,1 +1,8 @@
-theme: minima
+remote_theme: sighingnow/jekyll-gitbook
+
+syntax_highlighter_style: colorful
+
+toc:
+    enabled: true
+    h_min: 1
+    h_max: 3
