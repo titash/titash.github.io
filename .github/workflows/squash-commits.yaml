@@ -1,0 +1,21 @@
+name: Squash Commits
+
+on:
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  squash-commits:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Squash Commits
+        run: |
+          git checkout feature/${{ github.ref }}
+          git merge --squash HEAD~${{ github.run_number }}
+          git commit -m "Squash commits"
+          git push --force origin feature/${{ github.ref }}
