@@ -4,20 +4,9 @@ site_url: https://titash.github.io/
 repo_url: https://github.com/titash/titash.github.io
 repo_name: titash/titash.github.io
 
-# Theme: Material for professional, clean design
+# Theme: Minimal built-in theme for professional resume
 theme:
-  name: material
-  palette:
-    scheme: default
-    primary: blue
-    accent: blue
-  logo: null
-  favicon: null
-  features:
-    - navigation.instant
-    - navigation.tracking
-    - content.action.edit
-    - content.action.view
+  name: mkdocs
 
 plugins:
   - search
