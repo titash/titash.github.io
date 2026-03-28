@@ -1,0 +1,140 @@
+/* Resume-specific styles */
+
+/* Constrain content width for a document-like appearance */
+.md-grid {
+  max-width: 960px;
+}
+
+/* Header name styling */
+.md-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #00695c;
+}
+
+/* Section headings */
+.md-content h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 2px solid #00897b;
+  padding-bottom: 4px;
+  margin-top: 1.8rem;
+  color: #00695c;
+}
+
+/* Job title headings */
+.md-content h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+  color: #212121;
+}
+
+/* Project headings */
+.md-content h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #37474f;
+}
+
+/* Compact list items for bullet points */
+.md-content ul li {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+/* Horizontal rule separator */
+.md-content hr {
+  border-color: #e0e0e0;
+  margin: 1rem 0;
+}
+
+/* Download button bar */
+.resume-actions {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.resume-actions .btn-pdf {
+  padding: 10px 20px;
+  background: #00897b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.resume-actions .btn-pdf:hover {
+  background: #00695c;
+  color: white;
+}
+
+.resume-actions .btn-contact {
+  padding: 10px 20px;
+  background: #546e7a;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.resume-actions .btn-contact:hover {
+  background: #37474f;
+  color: white;
+}
+
+/* Print styles: clean PDF output */
+@media print {
+  /* Hide navigation, header, footer */
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer,
+  .md-search,
+  .md-dialog,
+  [data-md-toggle],
+  .resume-actions {
+    display: none !important;
+  }
+
+  .md-content {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .md-grid {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 1cm !important;
+  }
+
+  .md-main__inner {
+    margin: 0 !important;
+  }
+
+  body {
+    font-size: 11pt;
+    color: #000;
+  }
+
+  h1 { font-size: 18pt; }
+  h2 { font-size: 12pt; page-break-after: avoid; }
+  h3 { font-size: 11pt; page-break-after: avoid; }
+
+  ul, p { page-break-inside: avoid; }
+
+  a { color: #000; text-decoration: none; }
+
+  hr { border-color: #ccc; }
+}
