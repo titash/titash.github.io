@@ -5,6 +5,11 @@ description: Professional resume of Titash Roy Choudhury
 
 # Titash Roy Choudhury
 
+<div class="resume-actions">
+  <button class="btn-pdf" onclick="window.print()">📥 Download as PDF</button>
+  <a class="btn-contact" href="mailto:titash@live.in">📧 Contact</a>
+</div>
+
 **Senior Cloud Data Engineer** @ SEB
 
 titash@live.in | +46 70-739 37 85 | 170 76, Solna, Sweden | WORK PERMIT (SWEDEN)
