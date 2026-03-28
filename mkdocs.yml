@@ -4,10 +4,20 @@ site_url: https://titash.github.io/
 repo_url: https://github.com/titash/titash.github.io
 repo_name: titash/titash.github.io
 
-# Theme: Lightweight built-in themes available
-# Options: mkdocs (minimal), readthedocs, material (requires: pipx inject mkdocs mkdocs-material)
+# Theme: Material for professional, clean design
 theme:
-  name: mkdocs
+  name: material
+  palette:
+    scheme: default
+    primary: blue
+    accent: blue
+  logo: null
+  favicon: null
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.action.edit
+    - content.action.view
 
 plugins:
   - search
