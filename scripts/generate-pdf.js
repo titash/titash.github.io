@@ -303,21 +303,21 @@ function generateResumeHTML(data) {
     ${projects}
     
     <h2>Education</h2>
-    ${data.education.map(edu => 
-      \`<div class="education">
-        <span class="education-degree">\${edu.degree} in \${edu.field}</span><br/>
-        \${edu.institution}, \${edu.location} (\${edu.year})
-      </div>\`
-    ).join('')}
+    ${data.education.map(edu => {
+      return '<div class="education">' +
+        '<span class="education-degree">' + edu.degree + ' in ' + edu.field + '</span><br/>' +
+        edu.institution + ', ' + edu.location + ' (' + edu.year + ')' +
+        '</div>';
+    }).join('')}
     
-    ${data.certifications && data.certifications.length > 0 ? `
-    <h2>Certifications</h2>
-    ${data.certifications.map(cert => 
-      \`<div class="certification">
-        <span class="certification-name">\${cert.name}</span> - \${cert.issuer}
-      </div>\`
-    ).join('')}
-    ` : ''}
+    ${data.certifications && data.certifications.length > 0 ? 
+      '<h2>Certifications</h2>' +
+      data.certifications.map(cert => {
+        return '<div class="certification">' +
+          '<span class="certification-name">' + cert.name + '</span> - ' + cert.issuer +
+          '</div>';
+      }).join('')
+    : ''}
   </div>
 </body>
 </html>
