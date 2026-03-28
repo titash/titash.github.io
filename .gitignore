@@ -1,0 +1,10 @@
+# Build output
+site/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# MkDocs
+.cache/

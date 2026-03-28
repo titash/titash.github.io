@@ -1,0 +1,160 @@
+{
+  "personal": {
+    "name": "Titash Roy Choudhury",
+    "title": "Senior Cloud Data Engineer",
+    "company": "SEB",
+    "location": "170 76, Solna, Sweden",
+    "email": "titash@live.in",
+    "phone": "+46 70-739 37 85",
+    "skype": "live:titash",
+    "visaStatus": "WORK PERMIT (SWEDEN)"
+  },
+  "summary": "Enterprise Data Platform architect with 10+ years building scalable, compliant data solutions for E-gaming, Finance & Insurance sectors. Specialized in designing data warehouses, implementing ETL/ELT pipelines, and establishing data governance frameworks on-premises and cloud.",
+  "skills": {
+    "dataEngineering": ["ETL/ELT Design Patterns", "Data Integration", "Pipeline Orchestration", "Schema Design"],
+    "cloudPlatforms": ["BigQuery", "Dataform", "dbt", "Google Cloud Platform", "Pub/Sub", "Cloud Run"],
+    "programming": ["Python", "SQL", "Shell/Bash", "Git", "Pandas", "SQLAlchemy"],
+    "infrastructure": ["Terraform", "Docker", "Vagrant", "CI/CD", "Infrastructure as Code"],
+    "dataModeling": ["Inmon", "Kimball", "Atomic Models", "Data Vault"],
+    "governance": ["Data Quality Frameworks", "Master Data Management", "GDPR", "Data Masking"],
+    "businessIntelligence": ["Power BI", "SSRS", "Dashboarding", "Self-Service Analytics"],
+    "methodologies": ["SaFe Agile", "Scrum", "Kanban", "Test-Driven Development"]
+  },
+  "experience": [
+    {
+      "role": "Senior Cloud Data Engineer",
+      "company": "SEB Bank",
+      "location": "Stockholm, Sweden",
+      "startDate": "2022-07",
+      "endDate": "present",
+      "description": "Lead architect for Cloud Data Platform used across analytics and regulatory reporting functions.",
+      "highlights": [
+        "Provisioned enterprise-grade GCP infrastructure using Terraform; reduced provisioning time from weeks to days",
+        "Designed and implemented Great Expectations validation framework ensuring 99.9% data accuracy across 200+ datasets",
+        "Authored XML parsers in Python for complex nested data; automated ingestion from 15+ legacy systems",
+        "Scripted macros and unit tests in dbt enabling consistent business logic across 50+ analytical models",
+        "Engineered BigQuery backup solution with automated extraction to Google Cloud Storage; RTO under 4 hours",
+        "Mentored team on data quality standards; reviewed 100+ code contributions improving code quality by 40%",
+        "Reduced BigQuery query costs by 35% through intelligent partitioning and clustering strategies"
+      ]
+    },
+    {
+      "role": "DWH ETL Developer",
+      "company": "SEB Life & Pension",
+      "location": "Stockholm, Sweden",
+      "startDate": "2020-07",
+      "endDate": "2022-06",
+      "description": "Developed enterprise data warehouse supporting regulatory reporting (Solvency II) and business analytics.",
+      "highlights": [
+        "Implemented IBM Atomic Data Model for insurance; designed 80+ fact and dimension tables",
+        "Built 25+ SSIS packages for daily data ingestion from Oracle, SQL Server, and APIs; processed 100M+ records daily",
+        "Created C# and SQL-based validation rules; detected and prevented 15,000+ data quality issues annually",
+        "Designed GDPR-compliant architecture with data masking for PII across Data Lake serving 100+ users",
+        "Evaluated BigQuery solution resulting in 40% infrastructure cost reduction",
+        "Educated 50+ Finance users on Self-Service BI; reduced report turnaround from 3 days to 2 hours"
+      ]
+    },
+    {
+      "role": "International Data Consultant",
+      "company": "Ataccama s.r.o",
+      "location": "Prague, Czech Republic",
+      "startDate": "2019-11",
+      "endDate": "2020-06",
+      "description": "Consultant specializing in data quality and master data management across enterprise clients.",
+      "highlights": [
+        "Deployed Ataccama One IDE for clients; trained 100+ users across 5 organizations",
+        "Architected Google API integration for address validation; improved data quality metrics by 25%",
+        "Implemented SQL Server data masking solution enabling selective PII access control",
+        "Prototyped fuzzy matching algorithm in Python; deployed as REST API using Flask with sub-200ms response time",
+        "Delivered 8 proof-of-concepts with 5 converting to enterprise contracts"
+      ]
+    },
+    {
+      "role": "ETL Developer",
+      "company": "SEB Life International",
+      "location": "Kuala Lumpur, Malaysia",
+      "startDate": "2018-05",
+      "endDate": "2019-11",
+      "description": "Led ETL implementation for enterprise data warehouse supporting insurance operations and regulatory reporting.",
+      "highlights": [
+        "Led SSIS-based EDW implementation using IBM Insurance Information Warehouse model; served 30+ operational reports",
+        "Designed pipelines consuming data from 6+ sources (SQL Server, Oracle, Postgres, APIs); implemented GDPR compliance controls",
+        "Architected data models supporting Solvency II and Asset Under Management regulatory submissions",
+        "Designed Power BI dashboards for AUM analysis, asset performance, and ESG metrics used by 100+ stakeholders",
+        "Created optimized datasets for Customer E-life Web Portal; supported 500K+ daily transactions with 99.99% availability"
+      ]
+    },
+    {
+      "role": "Software Engineer II – Business Intelligence",
+      "company": "Aon India Services Ltd",
+      "location": "Noida, India",
+      "startDate": "2016-04",
+      "endDate": "2018-04",
+      "description": "Managed global ETL platform for employee time tracking and resource allocation across 12+ countries.",
+      "highlights": [
+        "End-to-end ownership of Global Time Tracking ETL; processed 50,000+ daily time entries",
+        "Consolidated time tracking data from 12 countries supporting $500M+ annual client billing",
+        "Implemented validation framework ensuring 99%+ accuracy; reduced billing disputes by 35%"
+      ]
+    },
+    {
+      "role": "Solutions Engineer – Business Intelligence",
+      "company": "Aditi Technologies Ltd",
+      "location": "Bangalore, India",
+      "startDate": "2013-04",
+      "endDate": "2016-03",
+      "description": "End-to-end Data Warehouse owner for Ladbrokes UK gaming operations across SQL Server and Oracle BI platforms.",
+      "highlights": [
+        "Owned enterprise DWH serving 50+ BI dashboards and 200+ users",
+        "Designed data models for player behavior analysis, revenue forecasting, and compliance reporting",
+        "Optimized queries and ETL processes; improved report generation from 45 minutes to 5 minutes"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mock Data API",
+      "technologies": ["Python", "Flask"],
+      "description": "Scalable mock data generation API for testing and development environments.",
+      "url": "https://github.com/titash01/python_api",
+      "highlights": [
+        "Generates configurable records with realistic data distributions",
+        "REST API built with Flask; supports JSON and CSV export formats",
+        "Extensible design enables production-grade fake data generation for ETL testing"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering",
+      "field": "Information Technology",
+      "institution": "Rajiv Gandhi Technical University",
+      "location": "Bhopal, India",
+      "year": "2008-2012"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "GCP Data Engineering Fundamentals",
+      "issuer": "Google Cloud"
+    },
+    {
+      "name": "SaFe Practitioner",
+      "issuer": "Scaled Agile Inc"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Fluent"
+    },
+    {
+      "name": "Swedish",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Hindi",
+      "level": "Native"
+    }
+  ]
+}
