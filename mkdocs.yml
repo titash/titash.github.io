@@ -1,46 +1,13 @@
-site_name: Titash Roy Choudhury - Resume & Docs
-site_description: Professional resume with comprehensive documentation and setup guides
-site_url: https://titash.github.io/docs/
+site_name: Titash Roy Choudhury - Resume
+site_description: Professional resume - Cloud Data Engineer
+site_url: https://titash.github.io/
 repo_url: https://github.com/titash/titash.github.io
 repo_name: titash/titash.github.io
 
+# Theme: Lightweight built-in themes available
+# Options: mkdocs (minimal), readthedocs, material (requires: pipx inject mkdocs mkdocs-material)
 theme:
-  name: material
-  palette:
-    - scheme: default
-      primary: blue
-      accent: blue
-      toggle:
-        icon: material/toggle-off
-        name: Switch to dark mode
-    - scheme: slate
-      primary: blue
-      accent: blue
-      toggle:
-        icon: material/toggle-on
-        name: Switch to light mode
-  features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-
-nav:
-  - Home: index.md
-  - Getting Started:
-    - Setup Guide: getting-started/setup.md
-    - Local Testing: getting-started/local-testing.md
-    - Quick Reference: getting-started/quick-reference.md
-  - System:
-    - Overview: system/overview.md
-    - Architecture: system/architecture.md
-    - File Structure: system/file-structure.md
-  - API Reference:
-    - Resume JSON: api/resume-json.md
+  name: mkdocs
 
 plugins:
   - search

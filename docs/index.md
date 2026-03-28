@@ -1,133 +1,142 @@
-# Titash Roy Choudhury - Resume
+---
+title: Resume
+description: Professional resume of Titash Roy Choudhury
+---
 
-Welcome to my **automated resume publishing system**! This documentation covers the complete setup, testing, and deployment process.
+# Titash Roy Choudhury
 
-## 🚀 Quick Start
+**Senior Cloud Data Engineer** @ SEB
 
-Your resume is **automatically published** whenever you make changes:
-
-```
-Edit resume.json → Push to GitHub → GitHub Actions builds & deploys → Live at https://titash.github.io/
-```
-
-## ✨ Features
-
-- **📄 JSON Resume Storage** - Keep your resume as clean JSON data
-- **🤖 Auto-Generation** - PDF generated automatically using Puppeteer
-- **📱 Responsive Design** - Works on all devices
-- **🔄 CI/CD Pipeline** - Automatic deployment on every push
-- **📚 Documentation** - Complete setup and testing guides
-- **🎨 Beautiful Design** - Professional gradient homepage with dark mode
-
-## 📦 What's Included
-
-| Component | Purpose |
-|-----------|---------|
-| `resume.json` | Structured resume data with experience, skills, projects |
-| `scripts/generate-pdf.js` | Puppeteer script to convert JSON → PDF |
-| `public/index.html` | Beautiful homepage with download button |
-| `.github/workflows/deploy.yml` | GitHub Actions CI/CD automation |
-| `docs/` | Complete documentation with mkdocs |
-
-## 🎯 Next Steps
-
-1. **[Setup Guide](getting-started/setup.md)** - Initial configuration and deployment
-2. **[Local Testing](getting-started/local-testing.md)** - Test locally before publishing
-3. **[System Overview](system/overview.md)** - Understand the architecture
-4. **[API Reference](api/resume-json.md)** - resume.json structure
-
-## 📊 Current Status
-
-- **Name**: Titash Roy Choudhury
-- **Title**: Senior Cloud Data Engineer @ SEB
-- **Experience**: 6+ years across multiple companies
-- **Skills**: Cloud, Data Engineering, DevOps, and more
-- **Location**: Stockholm, Sweden
-
-## 💡 How It Works
-
-```
-┌─────────────────────────────────────────────────┐
-│          You edit resume.json                    │
-│             (locally or on GitHub)               │
-└────────────────┬────────────────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────────────────┐
-│     GitHub Actions Workflow Triggered           │
-│  (on every push to main branch)                  │
-└────────────────┬────────────────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────────────────┐
-│  Step 1: Setup Node.js & Install Dependencies   │
-│  Step 2: Run Puppeteer PDF Generation Script    │
-│  Step 3: Generate Documentation (mkdocs)        │
-│  Step 4: Deploy to GitHub Pages                 │
-└────────────────┬────────────────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────────────────┐
-│    Live at https://titash.github.io/            │
-│  - Homepage with download button                │
-│  - Generated PDF resume                         │
-│  - Documentation site                           │
-└─────────────────────────────────────────────────┘
-```
-
-## 📖 Documentation
-
-- **[Setup Guide](getting-started/setup.md)** - Complete step-by-step setup
-- **[Local Testing](getting-started/local-testing.md)** - Test before publishing
-- **[Quick Reference](getting-started/quick-reference.md)** - Common commands
-- **[System Overview](system/overview.md)** - How everything works together
-- **[Architecture](system/architecture.md)** - Technical architecture
-- **[File Structure](system/file-structure.md)** - Repository layout
-- **[Resume JSON API](api/resume-json.md)** - JSON schema and structure
-
-## 🔧 Technologies
-
-- **Node.js 18** - JavaScript runtime
-- **Puppeteer 24.36.1** - Browser automation for PDF generation
-- **GitHub Actions** - CI/CD automation
-- **GitHub Pages** - Static hosting
-- **mkdocs** - Documentation site generator
-- **Material Theme** - Beautiful mkdocs theme
-
-## 📝 Editing Your Resume
-
-### Quick Edit (Online)
-1. Go to https://github.com/titash/titash.github.io
-2. Click `resume.json`
-3. Click ✏️ (Edit)
-4. Make changes
-5. Commit
-
-### Local Edit
-1. Clone the repository
-2. Edit `resume.json` locally
-3. Test with `npm run generate-pdf`
-4. Commit and push
-
-**Both automatically trigger deployment within 2-3 minutes!**
-
-## 🎓 Learning Resources
-
-- [mkdocs Documentation](https://www.mkdocs.org/)
-- [Material for mkdocs](https://squidfunk.github.io/mkdocs-material/)
-- [Puppeteer Documentation](https://pptr.dev/)
-- [GitHub Actions Guide](https://docs.github.com/en/actions)
-- [GitHub Pages Guide](https://pages.github.com/)
-
-## 💬 Support
-
-Need help? Check these resources:
-1. **[Local Testing Guide](getting-started/local-testing.md)** - Debug local issues
-2. **[System Overview](system/overview.md)** - Understand the system
-3. **[GitHub Actions Logs](https://github.com/titash/titash.github.io/actions)** - Check deployment logs
+titash@live.in | +46 70-739 37 85 | 170 76, Solna, Sweden | WORK PERMIT (SWEDEN)
 
 ---
 
-**Last Updated**: Automatically generated on every push
+## Executive Summary
 
-**Live Site**: https://titash.github.io/
+Enterprise Data Platform architect with 10+ years building scalable, compliant data solutions for E-gaming, Finance & Insurance sectors. Specialized in designing data warehouses, implementing ETL/ELT pipelines, and establishing data governance frameworks on-premises and cloud.
+
+---
+
+## Core Competencies
+
+**Data Engineering:** ETL/ELT Design Patterns, Data Integration, Pipeline Orchestration, Schema Design
+
+**Cloud Platforms:** BigQuery, Dataform, dbt, Google Cloud Platform, Pub/Sub, Cloud Run
+
+**Programming:** Python, SQL, Shell/Bash, Git, Pandas, SQLAlchemy
+
+**Infrastructure:** Terraform, Docker, Vagrant, CI/CD, Infrastructure as Code
+
+**Data Modeling:** Inmon, Kimball, Atomic Models, Data Vault
+
+**Governance:** Data Quality Frameworks, Master Data Management, GDPR, Data Masking
+
+**Business Intelligence:** Power BI, SSRS, Dashboarding, Self-Service Analytics
+
+**Methodologies:** SaFe Agile, Scrum, Kanban, Test-Driven Development
+
+---
+
+## Professional Experience
+
+### Senior Cloud Data Engineer
+**SEB Bank** | Stockholm, Sweden | *Jul 2022 – Present*
+
+Lead architect for Cloud Data Platform used across analytics and regulatory reporting functions.
+
+- Provisioned enterprise-grade GCP infrastructure using Terraform; reduced provisioning time from weeks to days
+- Designed and implemented Great Expectations validation framework ensuring 99.9% data accuracy across 200+ datasets
+- Authored XML parsers in Python for complex nested data; automated ingestion from 15+ legacy systems
+- Scripted macros and unit tests in dbt enabling consistent business logic across 50+ analytical models
+- Engineered BigQuery backup solution with automated extraction to Google Cloud Storage; RTO under 4 hours
+- Mentored team on data quality standards; reviewed 100+ code contributions improving code quality by 40%
+- Reduced BigQuery query costs by 35% through intelligent partitioning and clustering strategies
+
+---
+
+### DWH ETL Developer
+**SEB Life & Pension** | Stockholm, Sweden | *Jul 2020 – Jun 2022*
+
+Developed enterprise data warehouse supporting regulatory reporting (Solvency II) and business analytics.
+
+- Implemented IBM Atomic Data Model for insurance; designed 80+ fact and dimension tables
+- Built 25+ SSIS packages for daily data ingestion from Oracle, SQL Server, and APIs; processed 100M+ records daily
+- Created C# and SQL-based validation rules; detected and prevented 15,000+ data quality issues annually
+- Designed GDPR-compliant architecture with data masking for PII across Data Lake serving 100+ users
+- Evaluated BigQuery solution resulting in 40% infrastructure cost reduction
+- Educated 50+ Finance users on Self-Service BI; reduced report turnaround from 3 days to 2 hours
+
+---
+
+### International Data Consultant
+**Ataccama s.r.o** | Prague, Czech Republic | *Nov 2019 – Jun 2020*
+
+Consultant specializing in data quality and master data management across enterprise clients.
+
+- Deployed Ataccama One IDE for clients; trained 100+ users across 5 organizations
+- Architected Google API integration for address validation; improved data quality metrics by 25%
+- Implemented SQL Server data masking solution enabling selective PII access control
+- Prototyped fuzzy matching algorithm in Python; deployed as REST API using Flask with sub-200ms response time
+- Delivered 8 proof-of-concepts with 5 converting to enterprise contracts
+
+---
+
+### ETL Developer
+**SEB Life International** | Kuala Lumpur, Malaysia | *May 2018 – Nov 2019*
+
+Led ETL implementation for enterprise data warehouse supporting insurance operations and regulatory reporting.
+
+- Led SSIS-based EDW implementation using IBM Insurance Information Warehouse model; served 30+ operational reports
+- Designed pipelines consuming data from 6+ sources (SQL Server, Oracle, Postgres, APIs); implemented GDPR compliance controls
+- Architected data models supporting Solvency II and Asset Under Management regulatory submissions
+- Designed Power BI dashboards for AUM analysis, asset performance, and ESG metrics used by 100+ stakeholders
+- Created optimized datasets for Customer E-life Web Portal; supported 500K+ daily transactions with 99.99% availability
+
+---
+
+### Software Engineer II – Business Intelligence
+**Aon India Services Ltd** | Noida, India | *Apr 2016 – Apr 2018*
+
+Managed global ETL platform for employee time tracking and resource allocation across 12+ countries.
+
+- End-to-end ownership of Global Time Tracking ETL; processed 50,000+ daily time entries
+- Consolidated time tracking data from 12 countries supporting $500M+ annual client billing
+- Implemented validation framework ensuring 99%+ accuracy; reduced billing disputes by 35%
+
+---
+
+### Solutions Engineer – Business Intelligence
+**Aditi Technologies Ltd** | Bangalore, India | *Apr 2013 – Mar 2016*
+
+End-to-end Data Warehouse owner for Ladbrokes UK gaming operations across SQL Server and Oracle BI platforms.
+
+- Owned enterprise DWH serving 50+ BI dashboards and 200+ users
+- Designed data models for player behavior analysis, revenue forecasting, and compliance reporting
+- Optimized queries and ETL processes; improved report generation from 45 minutes to 5 minutes
+
+---
+
+## Featured Projects
+
+#### Mock Data API
+*Python, Flask* | [View →](https://github.com/titash01/python_api)
+
+Scalable mock data generation API for testing and development environments.
+
+---
+
+## Education
+
+- **Bachelor of Engineering** in Information Technology — Rajiv Gandhi Technical University, Bhopal, India (2008-2012)
+
+
+---
+
+## Certifications
+
+- **GCP Data Engineering Fundamentals** — Google Cloud
+- **SaFe Practitioner** — Scaled Agile Inc
+
+---
+
+*Last updated: March 28, 2026*
