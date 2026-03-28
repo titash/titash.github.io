@@ -1,0 +1,66 @@
+name: Build and Deploy Resume to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'resume.json'
+      - 'src/**'
+      - 'package.json'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build Next.js app
+        run: npm run build
+      
+      - name: Generate PDF from resume
+        run: node scripts/generate-pdf.js
+      
+      - name: Upload PDF to public
+        run: |
+          mkdir -p out/public/pdfs
+          mv resume.pdf out/public/pdfs/ || true
+      
+      - name: Create out directory
+        if: always()
+        run: |
+          mkdir -p out/public
+          cp -r .next/static out/public/ || true
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: 'out'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
