@@ -4,9 +4,22 @@ site_url: https://titash.github.io/
 repo_url: https://github.com/titash/titash.github.io
 repo_name: titash/titash.github.io
 
-# Theme: Minimal built-in theme for professional resume
+# Theme: Material theme for a professional resume-like appearance
 theme:
-  name: mkdocs
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.top
+    - toc.integrate
+
+extra_css:
+  - stylesheets/resume.css
 
 plugins:
   - search
@@ -14,3 +27,4 @@ plugins:
 markdown_extensions:
   - toc
   - tables
+  - attr_list

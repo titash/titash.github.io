@@ -79,9 +79,9 @@ description: Professional resume of ${resumeData.personal.name}
 
 # ${resumeData.personal.name}
 
-<div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-  <button onclick="window.print()" style="padding: 10px 20px; background: #1976D2; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">📥 Download as PDF</button>
-  <a href="mailto:${resumeData.personal.email}" style="padding: 10px 20px; background: #555; color: white; border-radius: 4px; text-decoration: none; font-weight: bold; display: inline-block;">📧 Contact</a>
+<div class="resume-actions">
+  <button class="btn-pdf" onclick="window.print()">📥 Download as PDF</button>
+  <a class="btn-contact" href="mailto:${resumeData.personal.email}">📧 Contact</a>
 </div>
 
 **${resumeData.personal.title}** @ ${resumeData.personal.company}
