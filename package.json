@@ -4,5 +4,8 @@
   },
   "scripts": {
     "generate-pdf": "node scripts/generate-pdf.js"
+  },
+  "devDependencies": {
+    "mkdocs": "^0.0.1"
   }
 }

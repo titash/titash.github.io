@@ -7,6 +7,8 @@ on:
       - 'resume.json'
       - 'scripts/**'
       - 'public/**'
+      - 'docs/**'
+      - 'mkdocs.yml'
       - 'package.json'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
@@ -37,14 +39,27 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
+      - name: Setup Python for mkdocs
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install mkdocs and theme
+        run: pip install mkdocs mkdocs-material
+      
       - name: Generate PDF from resume
         run: node scripts/generate-pdf.js
+        continue-on-error: true
+      
+      - name: Build documentation site
+        run: mkdocs build
         continue-on-error: true
       
       - name: Prepare deployment directory
         run: |
           mkdir -p out
           cp -r public/* out/ 2>/dev/null || true
+          cp -r site/* out/docs/ 2>/dev/null || true
           mkdir -p out/pdfs
           cp resume.pdf out/pdfs/ 2>/dev/null || true
           cp resume.json out/ 2>/dev/null || true
