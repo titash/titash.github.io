@@ -13,11 +13,5 @@ plugins:
   - search
 
 markdown_extensions:
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - admonition
-  - codehilite
   - toc
   - tables
