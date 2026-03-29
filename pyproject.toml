@@ -1,9 +1,0 @@
-[project]
-name = "titash-github-io"
-version = "0.1.0"
-description = "Add your description here"
-requires-python = ">=3.12"
-dependencies = [
-    "mkdocs-simple-blog>=0.4.1",
-    "reportlab>=4.4.10",
-]
