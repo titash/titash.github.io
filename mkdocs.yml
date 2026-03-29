@@ -1,0 +1,43 @@
+site_name: Titash's Git Pasta
+site_description: Senior Cloud Data Engineer
+site_url: https://titash.github.io/
+repo_url: https://github.com/titash/titash.github.io
+repo_name: titash/titash.github.io
+
+nav:
+  - Home: index.md
+  - Resume: resume.md
+  - Blog:
+    - blog/hello-world.md
+
+theme:
+  name: simple-blog
+  theme_style: light
+  site_name_style: bold
+  title_style: bold
+  sidebar: true
+  navigation_depth: 2
+  highlightjs: true
+  colors:
+    text: "#222222"
+    title: "#222222"
+    primary: "#3399cc"
+    background: "#ffffff"
+  components:
+    site_name: true
+    title: false
+    menu: true
+    preview: true
+    footer: false
+
+hooks:
+  - hooks/resume_hook.py
+
+extra_css:
+  - https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700italic,700
+  - stylesheets/resume.css
+
+markdown_extensions:
+  - toc
+  - tables
+  - attr_list
