@@ -6,10 +6,9 @@
     "location": "170 76, Solna, Sweden",
     "email": "titash@live.in",
     "phone": "+46 70-739 37 85",
-    "skype": "live:titash",
-    "visaStatus": "WORK PERMIT (SWEDEN)"
+    "skype": "live:titash"
   },
-  "summary": "Enterprise Data Platform architect with 10+ years building scalable, compliant data solutions for E-gaming, Finance & Insurance sectors. Specialized in designing data warehouses, implementing ETL/ELT pipelines, and establishing data governance frameworks on-premises and cloud.",
+  "summary": "Enterprise Data Platform Engineer with 10+ years building scalable, compliant data solutions for E-gaming, Finance & Insurance sectors. Specialized in designing data warehouses, implementing ETL/ELT pipelines, and establishing data governance frameworks on-premises and cloud.",
   "skills": {
     "dataEngineering": ["ETL/ELT Design Patterns", "Data Integration", "Pipeline Orchestration", "Schema Design"],
     "cloudPlatforms": ["BigQuery", "Dataform", "dbt", "Google Cloud Platform", "Pub/Sub", "Cloud Run"],
