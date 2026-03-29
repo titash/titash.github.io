@@ -4,7 +4,7 @@ titash@live.in | +46 70-739 37 85
 
 ## Summary
 
-Enterprise Data Platform architect with 10+ years building scalable, compliant data solutions for E-gaming, Finance & Insurance sectors. Specialized in designing data warehouses, implementing ETL/ELT pipelines, and establishing data governance frameworks on-premises and cloud.
+Enterprise Data Platform Engineer with 10+ years building scalable, compliant data solutions for E-gaming, Finance & Insurance sectors. Specialized in designing data warehouses, implementing ETL/ELT pipelines, and establishing data governance frameworks on-premises and cloud.
 
 ## Skills
 
