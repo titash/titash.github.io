@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: write  # needed for mkdocs gh-deploy
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -33,14 +33,6 @@ jobs:
 
       - name: Regenerate resume.md and resume.pdf from resume.json
         run: uv run python scripts/generate_resume.py
-
-      - name: Commit regenerated files if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/resume.md docs/pdf/resume.pdf
-          git diff --cached --quiet || git commit -m "chore: regenerate resume.md and resume.pdf from resume.json [skip ci]"
-          git push origin main || true
 
       - name: Deploy to gh-pages
         run: uv run mkdocs gh-deploy --force

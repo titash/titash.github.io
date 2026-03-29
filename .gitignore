@@ -8,3 +8,7 @@ __pycache__/
 
 # MkDocs
 .cache/
+
+# Generated files (produced by scripts/generate_resume.py)
+docs/resume.md
+docs/pdf/resume.pdf
