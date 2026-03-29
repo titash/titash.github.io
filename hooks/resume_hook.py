@@ -26,6 +26,11 @@ def on_pre_build(config, **kwargs):
     print("[resume_hook] Regenerated resume.md and resume.pdf from resume.json")
 
 
+def on_serve(server, config, builder, **kwargs):
+    """Watch resume.json so mkdocs serve rebuilds when it changes."""
+    server.watch(str(RESUME_JSON), builder)
+
+
 def on_post_build(config, **kwargs):
     """Copy the PDF into the built site directory."""
     if not DOCS_PDF.exists():

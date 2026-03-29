@@ -26,7 +26,7 @@
       "location": "Stockholm, Sweden",
       "startDate": "2022-07",
       "endDate": "present",
-      "description": "Lead architect for Cloud Data Platform used across analytics and regulatory reporting functions.",
+      "description": "Leading data engineering efforts for Cloud Data Platform used across analytics and regulatory reporting functions.",
       "highlights": [
         "Provisioned enterprise-grade GCP infrastructure using Terraform; reduced provisioning time from weeks to days",
         "Designed and implemented Great Expectations validation framework ensuring 99.9% data accuracy across 200+ datasets",

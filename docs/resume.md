@@ -22,7 +22,7 @@ Enterprise Data Platform Engineer with 10+ years building scalable, compliant da
 ### Senior Cloud Data Engineer — SEB Bank
 *Stockholm, Sweden | 2022-07 – Present*
 
-Lead architect for Cloud Data Platform used across analytics and regulatory reporting functions.
+Leading data engineering efforts for Cloud Data Platform used across analytics and regulatory reporting functions.
 
 - Provisioned enterprise-grade GCP infrastructure using Terraform; reduced provisioning time from weeks to days
 - Designed and implemented Great Expectations validation framework ensuring 99.9% data accuracy across 200+ datasets
